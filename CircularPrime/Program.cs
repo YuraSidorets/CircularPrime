@@ -10,6 +10,15 @@ namespace CircularPrime
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Count: "+Prime.Find());
+            Console.WriteLine();
+
+            foreach (int circularPrime in Prime.Primes)
+            {
+                Console.WriteLine(circularPrime);
+            }
+            Console.CursorTop = 0;
+            Console.ReadLine();
         }
     }
 }
